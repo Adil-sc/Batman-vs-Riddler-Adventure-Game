@@ -6,9 +6,11 @@
 #define FINALPROJECT_GAME_H
 
 #include "Space.h"
-#include "EastModule.h"
-#include "WestModule.h"
-#include "MainRoom.h"
+#include "ArkhamEast.h"
+#include "ArkhamWest.h"
+#include "ArkhamMainRoom.h"
+#include "ArkhamNorth.h"
+#include "ArkhamSouth.h"
 
 
 class Game {
@@ -20,7 +22,7 @@ private:
     Space *previousLocation = nullptr;
 
 
-    vector <Space *> spaceStateionMap;
+    vector <Space *> ArkhamAsylumMap;
 
 
 

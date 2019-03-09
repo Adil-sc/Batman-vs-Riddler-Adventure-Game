@@ -7,15 +7,15 @@
 
 #include "Space.h"
 
-class MainRoom: public Space {
+class ArkhamMainRoom: public Space {
 
 private:
 
 public:
 
-    MainRoom();
+    ArkhamMainRoom();
 
-    virtual void riddle(Space *&currentLocation,vector<Space *>spaceStateionMap);
+    virtual void riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap);
 
 };
 

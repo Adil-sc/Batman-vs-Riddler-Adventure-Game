@@ -2,19 +2,20 @@
 // Created by Sandybridge W10 on 3/9/2019.
 //
 
-#include "WestModule.h"
+#include "ArkhamNorth.h"
 
-WestModule::WestModule()
-    :Space("West Module Room")
+ArkhamNorth::ArkhamNorth()
+    :Space("Arkham North")
 {
 
 }
 
-void WestModule::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap) {
+void ArkhamNorth::riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap) {
+
 
     int menuChoice = 0;
 
-    cout<<"***West Module***"<<std::endl;
+    cout<<"***Arkham North***"<<std::endl;
 
     vector <string> myMenuOptions = {"Interact with terminal","Go back to main area"};
     Menu myMenu("",myMenuOptions);
@@ -29,12 +30,8 @@ void WestModule::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap)
             break;
 
         case 2:
-
-            //Player is sent back to the command module
-            currentLocation = spaceStateionMap[West_Room]->getRight();
-
+            currentLocation = ArkhamAsylumMap[Arkham_North]->getBottom();
             break;
-
 
     }
 

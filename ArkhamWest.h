@@ -6,15 +6,15 @@
 #define FINALPROJECT_WESTMODULE_H
 #include "Space.h"
 
-class WestModule: public Space {
+class ArkhamWest: public Space {
 
 private:
 
 public:
 
-    WestModule();
+    ArkhamWest();
 
-    virtual void riddle(Space *&currentLocation,vector<Space *>spaceStateionMap);
+    virtual void riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap);
 
 
 

@@ -2,15 +2,15 @@
 // Created by Sandybridge W10 on 3/9/2019.
 //
 
-#include "MainRoom.h"
+#include "ArkhamMainRoom.h"
 
-MainRoom::MainRoom()
+ArkhamMainRoom::ArkhamMainRoom()
     :Space("Main Room")
 {
 
 }
 
-void MainRoom::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap) {
+void ArkhamMainRoom::riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap) {
 
     int menuChoice = 0;
 
@@ -25,20 +25,20 @@ void MainRoom::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap) {
         case 1:
 
             //set current location to West Module
-            currentLocation = spaceStateionMap[1];
+            currentLocation = ArkhamAsylumMap[1];
 
             break;
 
         case 2:
-            currentLocation = spaceStateionMap[2];
+            currentLocation = ArkhamAsylumMap[2];
             break;
 
         case 3:
-            currentLocation = spaceStateionMap[3];
+            currentLocation = ArkhamAsylumMap[3];
             break;
 
         case 4:
-            currentLocation = spaceStateionMap[4];
+            currentLocation = ArkhamAsylumMap[4];
             break;
 
 

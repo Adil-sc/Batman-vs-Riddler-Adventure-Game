@@ -6,7 +6,7 @@
 #define FINALPROJECT_COMMANDMODULE_H
 #include "Space.h"
 
-class EastModule: public Space {
+class ArkhamEast: public Space {
 
 
 private:
@@ -15,10 +15,10 @@ private:
 
 public:
 
-    EastModule();
+    ArkhamEast();
 
 
-    virtual void riddle(Space *&currentLocation,vector<Space *>spaceStateionMap);
+    virtual void riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap);
 
 };
 

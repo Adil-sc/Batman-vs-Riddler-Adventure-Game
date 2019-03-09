@@ -9,49 +9,49 @@
 Game::Game() {
 
 
-    spaceStateionMap.push_back(new MainRoom()); //
-    spaceStateionMap.push_back(new EastModule()); //North
-    spaceStateionMap.push_back(new EastModule()); // South
-    spaceStateionMap.push_back(new EastModule()); // East
-    spaceStateionMap.push_back(new WestModule());// West
+    ArkhamAsylumMap.push_back(new ArkhamMainRoom()); //
+    ArkhamAsylumMap.push_back(new ArkhamNorth()); //North
+    ArkhamAsylumMap.push_back(new ArkhamSouth()); // South
+    ArkhamAsylumMap.push_back(new ArkhamEast()); // East
+    ArkhamAsylumMap.push_back(new ArkhamWest());// West
 
 
 
     //Settling top,left,right,bottom pointers
-    spaceStateionMap[Main_Room]->setTop(spaceStateionMap[0]);  //North
-    spaceStateionMap[Main_Room]->setBottom(spaceStateionMap[2]);  //South
-    spaceStateionMap[Main_Room]->setRight(spaceStateionMap[3]); //East
-    spaceStateionMap[Main_Room]->setLeft(spaceStateionMap[4]); //West
+    ArkhamAsylumMap[Arkham_Main]->setTop(ArkhamAsylumMap[0]);  //North
+    ArkhamAsylumMap[Arkham_Main]->setBottom(ArkhamAsylumMap[2]);  //South
+    ArkhamAsylumMap[Arkham_Main]->setRight(ArkhamAsylumMap[3]); //East
+    ArkhamAsylumMap[Arkham_Main]->setLeft(ArkhamAsylumMap[4]); //West
 
     //Link the North Module to the main room top
-    spaceStateionMap[North_Room]->setTop(nullptr);
-    spaceStateionMap[North_Room]->setBottom(spaceStateionMap[0]);
-    spaceStateionMap[North_Room]->setRight(nullptr);
-    spaceStateionMap[North_Room]->setLeft(nullptr);
+    ArkhamAsylumMap[Arkham_North]->setTop(nullptr);
+    ArkhamAsylumMap[Arkham_North]->setBottom(ArkhamAsylumMap[0]);
+    ArkhamAsylumMap[Arkham_North]->setRight(nullptr);
+    ArkhamAsylumMap[Arkham_North]->setLeft(nullptr);
 
     //Link the Sourth Module to the main rooms bottom
-    spaceStateionMap[South_Room]->setTop(spaceStateionMap[0]);
-    spaceStateionMap[South_Room]->setBottom(nullptr);
-    spaceStateionMap[South_Room]->setRight(nullptr);
-    spaceStateionMap[South_Room]->setLeft(nullptr);
+    ArkhamAsylumMap[Arkham_South]->setTop(ArkhamAsylumMap[0]);
+    ArkhamAsylumMap[Arkham_South]->setBottom(nullptr);
+    ArkhamAsylumMap[Arkham_South]->setRight(nullptr);
+    ArkhamAsylumMap[Arkham_South]->setLeft(nullptr);
 
     //Link the East Module to the main rooms bottom
-    spaceStateionMap[East_Room]->setTop(nullptr);
-    spaceStateionMap[East_Room]->setBottom(nullptr);
-    spaceStateionMap[East_Room]->setRight(nullptr);
-    spaceStateionMap[East_Room]->setLeft(spaceStateionMap[0]);
+    ArkhamAsylumMap[Arkham_East]->setTop(nullptr);
+    ArkhamAsylumMap[Arkham_East]->setBottom(nullptr);
+    ArkhamAsylumMap[Arkham_East]->setRight(nullptr);
+    ArkhamAsylumMap[Arkham_East]->setLeft(ArkhamAsylumMap[0]);
 
     //Link the West Module to the main rooms bottom
-    spaceStateionMap[West_Room]->setTop(nullptr);
-    spaceStateionMap[West_Room]->setBottom(nullptr);
-    spaceStateionMap[West_Room]->setRight(spaceStateionMap[0]);
-    spaceStateionMap[West_Room]->setLeft(nullptr);
+    ArkhamAsylumMap[Arkham_West]->setTop(nullptr);
+    ArkhamAsylumMap[Arkham_West]->setBottom(nullptr);
+    ArkhamAsylumMap[Arkham_West]->setRight(ArkhamAsylumMap[0]);
+    ArkhamAsylumMap[Arkham_West]->setLeft(nullptr);
 
 
 
 
 
-    currentLocation = spaceStateionMap[0];
+    currentLocation = ArkhamAsylumMap[0];
 }
 
 
@@ -62,7 +62,7 @@ void Game::gameStart() {
     cout<<"Game start"<<std::endl;
     while(playing){
 
-        currentLocation->riddle(currentLocation,spaceStateionMap);
+        currentLocation->riddle(currentLocation,ArkhamAsylumMap);
 
     }
 
