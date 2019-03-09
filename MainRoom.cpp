@@ -16,7 +16,7 @@ void MainRoom::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap) {
 
     cout<<"***Command Modukle***"<<std::endl;
 
-    vector <string> myMenuOptions = {"Go through North Module","Go through South Module","----------","---------"};
+    vector <string> myMenuOptions = {"Go through North Module","Go through South Module","Go through East Module","Go through West Module"};
     Menu myMenu("",myMenuOptions);
     menuChoice = myMenu.displayMenu();
 
@@ -34,11 +34,11 @@ void MainRoom::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap) {
             break;
 
         case 3:
-            currentLocation = spaceStateionMap[2];
+            currentLocation = spaceStateionMap[3];
             break;
 
         case 4:
-            currentLocation = spaceStateionMap[2];
+            currentLocation = spaceStateionMap[4];
             break;
 
 

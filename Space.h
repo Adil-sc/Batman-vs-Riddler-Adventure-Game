@@ -16,6 +16,8 @@ using std::cout;
 using std::cin;
 using std::vector;
 
+enum Locations {Main_Room,North_Room,South_Room,East_Room,West_Room};
+
 class Space {
 
 private:

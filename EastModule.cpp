@@ -31,7 +31,7 @@ void EastModule::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap)
             break;
 
         case 2:
-            currentLocation = spaceStateionMap[0];
+            currentLocation = spaceStateionMap[East_Room]->getLeft();
             break;
 
     }

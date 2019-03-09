@@ -31,7 +31,7 @@ void WestModule::riddle(Space *&currentLocation,vector<Space *>spaceStateionMap)
         case 2:
 
             //Player is sent back to the command module
-            currentLocation = spaceStateionMap[0];
+            currentLocation = spaceStateionMap[West_Room]->getRight();
 
             break;
 
