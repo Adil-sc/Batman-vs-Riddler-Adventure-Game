@@ -9,7 +9,7 @@
 class ArkhamWest: public Space {
 
 private:
-
+    bool riddleSolved = false;
 public:
 
     ArkhamWest();

@@ -12,6 +12,7 @@
 #include "ArkhamNorth.h"
 #include "ArkhamSouth.h"
 #include "ArkhamDeathRoom.h"
+#include "Player.h"
 
 
 class Game {
@@ -21,6 +22,8 @@ private:
     bool playing = true;
     Space *currentLocation = nullptr;
     Space *previousLocation = nullptr;
+
+    Player *batman = new Player("Batman");
 
 
     vector <Space *> ArkhamAsylumMap;
@@ -32,6 +35,7 @@ private:
 public:
     Game();
     void gameStart();
+
 
 };
 

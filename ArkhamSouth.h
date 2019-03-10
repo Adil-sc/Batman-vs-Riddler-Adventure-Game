@@ -10,7 +10,7 @@
 class ArkhamSouth:public Space {
 
 private:
-
+    bool riddleSolved = false;
 
 public:
     ArkhamSouth();

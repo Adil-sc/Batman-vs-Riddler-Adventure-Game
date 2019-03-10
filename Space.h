@@ -56,6 +56,7 @@ public:
 
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) = 0;
     //virtual bool gameOver(){};
+    virtual void riddleSolved(){}
 
 
 };

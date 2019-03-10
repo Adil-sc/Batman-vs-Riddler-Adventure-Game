@@ -10,6 +10,7 @@
 class ArkhamNorth:public Space {
 
 private:
+    bool riddleSolved = false;
 
 public:
     ArkhamNorth();
