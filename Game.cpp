@@ -14,6 +14,7 @@ Game::Game() {
     ArkhamAsylumMap.push_back(new ArkhamSouth()); // South
     ArkhamAsylumMap.push_back(new ArkhamEast()); // East
     ArkhamAsylumMap.push_back(new ArkhamWest());// West
+    ArkhamAsylumMap.push_back(new ArkhamDeathRoom()); //Death Room
 
 
 
@@ -47,6 +48,12 @@ Game::Game() {
     ArkhamAsylumMap[Arkham_West]->setRight(ArkhamAsylumMap[0]);
     ArkhamAsylumMap[Arkham_West]->setLeft(nullptr);
 
+    //Sets all direction pointers of the Arkham Death Room to  null
+    ArkhamAsylumMap[Arkham_DeathRoom]->setTop(nullptr);
+    ArkhamAsylumMap[Arkham_DeathRoom]->setBottom(nullptr);
+    ArkhamAsylumMap[Arkham_DeathRoom]->setRight(nullptr);
+    ArkhamAsylumMap[Arkham_DeathRoom]->setLeft(nullptr);
+
 
 
 
@@ -62,9 +69,14 @@ void Game::gameStart() {
     cout<<"Game start"<<std::endl;
     while(playing){
 
-        currentLocation->riddle(currentLocation,ArkhamAsylumMap);
+        currentLocation->run(currentLocation, ArkhamAsylumMap);
+
+        //If the Game has ended
+        if(currentLocation == ArkhamAsylumMap[Arkham_DeathRoom]){
+            currentLocation->run(currentLocation,ArkhamAsylumMap);
+            playing = false;
+        }
 
     }
-
 
 }

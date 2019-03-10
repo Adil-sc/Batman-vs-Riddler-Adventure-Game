@@ -11,6 +11,7 @@
 #include "ArkhamMainRoom.h"
 #include "ArkhamNorth.h"
 #include "ArkhamSouth.h"
+#include "ArkhamDeathRoom.h"
 
 
 class Game {

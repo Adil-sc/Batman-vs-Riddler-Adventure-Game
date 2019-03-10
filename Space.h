@@ -16,7 +16,7 @@ using std::cout;
 using std::cin;
 using std::vector;
 
-enum Locations {Arkham_Main,Arkham_North,Arkham_South,Arkham_East,Arkham_West};
+enum Locations {Arkham_Main,Arkham_North,Arkham_South,Arkham_East,Arkham_West,Arkham_DeathRoom};
 
 class Space {
 
@@ -54,7 +54,8 @@ public:
     Space *getBottom();
 
 
-    virtual void riddle(Space *&currentLocation,vector<Space *> ArkhamAsylumMap) = 0;
+    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) = 0;
+    //virtual bool gameOver(){};
 
 
 };

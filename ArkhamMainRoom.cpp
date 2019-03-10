@@ -10,7 +10,7 @@ ArkhamMainRoom::ArkhamMainRoom()
 
 }
 
-void ArkhamMainRoom::riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap) {
+void ArkhamMainRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
 
     int menuChoice = 0;
 

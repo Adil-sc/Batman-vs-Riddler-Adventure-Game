@@ -14,7 +14,7 @@ public:
 
     ArkhamWest();
 
-    virtual void riddle(Space *&currentLocation,vector<Space *>ArkhamAsylumMap);
+    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap);
 
 
 
