@@ -15,6 +15,7 @@ Game::Game() {
     ArkhamAsylumMap.push_back(new ArkhamEast()); // East
     ArkhamAsylumMap.push_back(new ArkhamWest());// West
     ArkhamAsylumMap.push_back(new ArkhamDeathRoom()); //Death Room
+    ArkhamAsylumMap.push_back(new ArkhamWinRoom()); //Win Room
 
 
 
@@ -48,38 +49,61 @@ Game::Game() {
     ArkhamAsylumMap[Arkham_West]->setRight(ArkhamAsylumMap[0]);
     ArkhamAsylumMap[Arkham_West]->setLeft(nullptr);
 
-    //Sets all direction pointers of the Arkham Death Room to  null
+    //Sets all direction pointers of the Arkham Death Room to null
     ArkhamAsylumMap[Arkham_DeathRoom]->setTop(nullptr);
     ArkhamAsylumMap[Arkham_DeathRoom]->setBottom(nullptr);
     ArkhamAsylumMap[Arkham_DeathRoom]->setRight(nullptr);
     ArkhamAsylumMap[Arkham_DeathRoom]->setLeft(nullptr);
 
+    //Sets all direction pointers of the Arkham Win  Room to null
+    ArkhamAsylumMap[Arkham_WinRoom]->setTop(nullptr);
+    ArkhamAsylumMap[Arkham_WinRoom]->setBottom(nullptr);
+    ArkhamAsylumMap[Arkham_WinRoom]->setRight(nullptr);
+    ArkhamAsylumMap[Arkham_WinRoom]->setLeft(nullptr);
 
 
 
 
-    currentLocation = ArkhamAsylumMap[0];
+
+    currentLocation = ArkhamAsylumMap[Arkham_Main];
 }
 
 
 void Game::gameStart() {
 
 
-    while(playing){
-        cout<<""<<std::endl;
-        cout<<batman->getName()<<std::endl;
-        batman->timeLimitCountdown();
-     //   batman->addToUtilityBelt("Key1",0);
-        batman->batmanUtilityBelt();
-        currentLocation->run(currentLocation, ArkhamAsylumMap,batman);
+    while (playing) {
+        showPlayerStates();
 
+        currentLocation->run(currentLocation, ArkhamAsylumMap, batman);
 
-        //If the Game has ended
-        if(currentLocation == ArkhamAsylumMap[Arkham_DeathRoom]){
-            currentLocation->run(currentLocation,ArkhamAsylumMap,batman);
+        //  batman->setKeyCount(4);
+        //If all 4 keys have been collected
+        if (batman->allKeysCollected() == true) {
+            //Displays Batmans name, time remaining, and items in the utility belt
+            showPlayerStates();
+
+            //Sets the location to the win room
+            currentLocation = ArkhamAsylumMap[Arkham_WinRoom];
+            //Runs the win room
+            currentLocation->run(currentLocation, ArkhamAsylumMap, batman);
+            //Game is over
             playing = false;
         }
 
+        //If the Game has ended or the time limit is up
+        if (currentLocation == ArkhamAsylumMap[Arkham_DeathRoom] || batman->getTimeLimit() <= 0) {
+            currentLocation = ArkhamAsylumMap[Arkham_DeathRoom];
+            currentLocation->run(currentLocation, ArkhamAsylumMap, batman);
+            playing = false;
+        }
     }
+}
 
+void Game::showPlayerStates() {
+    cout<<""<<std::endl;
+    cout<<batman->getName()<<std::endl;
+    batman->setTimeLimit(batman->getTimeLimit()-10);
+    batman->timeLimitCountdown();
+    batman->batmanUtilityBelt();
 }

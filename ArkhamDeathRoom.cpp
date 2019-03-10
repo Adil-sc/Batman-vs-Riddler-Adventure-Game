@@ -5,7 +5,7 @@
 #include "ArkhamDeathRoom.h"
 
 ArkhamDeathRoom::ArkhamDeathRoom()
-    :Space("Death Room")
+    :Space("Arkham Death Room")
 {
 
 }

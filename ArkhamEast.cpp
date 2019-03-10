@@ -5,7 +5,7 @@
 #include "ArkhamEast.h"
 
 ArkhamEast::ArkhamEast()
-    :Space("East Module Room")
+    :Space("Arkham East")
 {
 
 }
@@ -58,7 +58,7 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
 
             //Correct answer
         case 2:
-            Player->addToUtilityBelt("Arkham East Key",2);
+            Player->addToUtilityBelt("Arkham East Key",1);
             riddleSolved = true;
             currentLocation = ArkhamAsylumMap[Arkham_East]->getLeft();
             cout<<"Lines of code flash on the terminal....Batman hear a safe in the room unlock. He approaches the safe and in it he finds a key.";
@@ -97,6 +97,8 @@ void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, P
 
     cout<<"<--Arkham East-->"<<std::endl;
     cout<<""<<std::endl;
+
+    displayBatman();
     cout<<"The lights flicker as Batman steps into the Psyc ward of Arkham east. Off in the distance, at the end of a long hall"<<std::endl;
     cout<<"way, he sees a soft green glow creep out under a door";
     cout<<"Batman approaches the door, the plaque reads Dr.'Joan Leland'.."<<std::endl;

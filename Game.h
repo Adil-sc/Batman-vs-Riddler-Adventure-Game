@@ -13,6 +13,7 @@
 #include "ArkhamSouth.h"
 #include "ArkhamDeathRoom.h"
 #include "Player.h"
+#include "ArkhamWinRoom.h"
 
 
 class Game {
@@ -35,6 +36,7 @@ private:
 public:
     Game();
     void gameStart();
+    void showPlayerStates();
 
 
 };

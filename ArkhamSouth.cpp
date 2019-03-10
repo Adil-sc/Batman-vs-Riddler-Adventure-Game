@@ -68,7 +68,7 @@ void ArkhamSouth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
                 break;
                 //Correct answer
             case 4:
-                Player->addToUtilityBelt("Arkham North Key",0);
+                Player->addToUtilityBelt("Arkham South  Key",2);
                 riddleSolved = true;
                 currentLocation = ArkhamAsylumMap[Arkham_North]->getBottom();
                 cout<<"Lines of code flash on the terminal....Batman hear a safe in the room unlock. He approaches the safe and in it he finds a key.";
@@ -100,6 +100,8 @@ void ArkhamSouth::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, 
 
     cout<<"<--Arkham South-->"<<std::endl;
     cout<<""<<std::endl;
+
+    displayBatman();
     cout<<"Batman steps into the correctional facility...No one seems to be here";
     cout<<"batman kneels, fresh blood on the ground...seems tolead to a door. ";
     cout<<"Batman approaches the door, the plaque reads 'Aron Cash - Security Guard'.."<<std::endl;

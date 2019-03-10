@@ -103,6 +103,8 @@ void ArkhamNorth::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, 
 
     cout<<"<--Arkham North-->"<<std::endl;
     cout<<""<<std::endl;
+
+    displayBatman();
     cout<<"Batman steps into the Botanical Gardens...Nothing but the moon light illuminates the grounds. As he sprints through the garden";
     cout<<", he feels a soft green light break through the bushes..";
     cout<<"Batman approaches the light..The care takers quarters."<<std::endl;

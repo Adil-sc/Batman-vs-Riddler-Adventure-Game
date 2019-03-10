@@ -19,8 +19,8 @@ class Player {
     private:
 
     string name = "";
-    int timeLimit = 100;
-
+    int timeLimit = 110;
+    int keyCount = 0;
     vector <string> utilityBelt;
 
 
@@ -31,10 +31,14 @@ class Player {
     void setName(string name);
     void setTimeLimit(int timeLimit);
     void addToUtilityBelt(string newItem,int VectorPos);
+    void setKeyCount(int keyCount);
 
     //Getters
     string getName();
     int getTimeLimit();
+    int getUtilityBeltSize();
+
+    bool allKeysCollected();
 
     void batmanUtilityBelt();
     void timeLimitCountdown();

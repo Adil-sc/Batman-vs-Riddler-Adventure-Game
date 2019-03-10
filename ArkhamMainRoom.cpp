@@ -5,7 +5,7 @@
 #include "ArkhamMainRoom.h"
 
 ArkhamMainRoom::ArkhamMainRoom()
-    :Space("Main Room")
+    :Space("Arkham Main")
 {
 
 }

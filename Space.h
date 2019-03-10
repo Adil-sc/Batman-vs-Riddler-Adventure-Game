@@ -11,13 +11,14 @@
 #include "Menu.h"
 #include "inputValidation.h"
 #include "Player.h"
+#include "gameGraphics.h"
 
 using std::string;
 using std::cout;
 using std::cin;
 using std::vector;
 
-enum Locations {Arkham_Main,Arkham_North,Arkham_South,Arkham_East,Arkham_West,Arkham_DeathRoom};
+enum Locations {Arkham_Main,Arkham_North,Arkham_South,Arkham_East,Arkham_West,Arkham_DeathRoom,Arkham_WinRoom};
 
 class Space {
 

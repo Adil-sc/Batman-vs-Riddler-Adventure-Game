@@ -24,13 +24,19 @@ void Player::setTimeLimit(int timeLimit) {
 void Player::addToUtilityBelt(string newItem,int VectorPos) {
 
        utilityBelt[VectorPos] = newItem;
+        keyCount++;
 
+}
+
+void Player::setKeyCount(int keyCount) {
+    this->keyCount = keyCount;
 }
 void Player::batmanUtilityBelt() {
     cout<<"Utility Belt: ";
     for(int i = 0; i<utilityBelt.size();i++){
         cout<<"["<<utilityBelt[i]<<"] ";
     }
+
     cout<<""<<std::endl;
     cout<<""<<std::endl;
 }
@@ -43,8 +49,22 @@ int Player::getTimeLimit() {
     return timeLimit;
 }
 
+int Player::getUtilityBeltSize() {
+    return utilityBelt.size();
+}
+
+bool Player::allKeysCollected() {
+
+    if(keyCount == 4){
+        return true;
+    } else{
+        return false;
+    }
+
+}
+
 void Player::timeLimitCountdown() {
 
-    cout<<"Time limit remaining: "<<timeLimit-(rand()%10+5)<<std::endl;
+    cout<<"Time limit remaining: "<<timeLimit<<" min"<<std::endl;
 
 }
