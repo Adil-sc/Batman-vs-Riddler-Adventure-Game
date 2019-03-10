@@ -12,6 +12,7 @@ using std::cin;
 
 void displayBatman();
 void displaySplashScreen();
+void displayBatmanFace();
 
 
 #endif //FINALPROJECT_GAMEGRAPHICS_H

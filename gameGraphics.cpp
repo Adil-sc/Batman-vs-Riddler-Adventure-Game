@@ -70,3 +70,60 @@ void displayBatman(){
 //cout<<"ARV"<<std::endl;
 
 }
+
+void displayBatmanFace(){
+
+cout<<"            .$                                  $.           "<<std::endl;
+cout<<"          /:;                                  :;\\          "<<std::endl;
+cout<<"         : $                                    $ ;          "<<std::endl;
+cout<<"         ;:$                                    $;:          "<<std::endl;
+cout<<"        : $:              ________              ;$ ;         "<<std::endl;
+cout<<"        ; $;;     _..gg$$SSP^^^^T$S$$pp.._     ::$ :         "<<std::endl;
+cout<<"       : :$;|  .g$$$$$$SSP"      "TS$$$$$$$p.  |:$; ;        "<<std::endl;
+cout<<"       ; :$;:.d$$$$$$$SSS          SS$$$$$$$$b.;:$; :        "<<std::endl;
+cout<<"      :  :$$$$$$$$$$$$SSS          SS$$$$$$$$$$$$$;  ;       "<<std::endl;
+cout<<"      ;  $$$$$$$$$$$$$$SSb.      .dS$$$$$$$$$$$$$$;  :       "<<std::endl;
+cout<<"     :  :S$$$$$$$$$$$$$$SSSSppggSSS$$$$$$$$$$$$$$$;   ;      "<<std::endl;
+cout<<"     |  :SS$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$;   :      "<<std::endl;
+cout<<"     |  :SS$$$$$$$$$$$$$$$$$^^^^^^^^^$$$$$$$$$$$$$$   :      "<<std::endl;
+cout<<"     ;   SS$$$$$$$$$$P^"                 "^T$$$$$$$   :      "<<std::endl;
+cout<<"    :    :SS$$$$$$$$$                       T$$$$$;   :      "<<std::endl;
+cout<<"    |     SSS$$$$$$$;                        T$$$$    :      "<<std::endl;
+cout<<"    |     :SSS$$$$$$;                        :$$$;    :      "<<std::endl;
+cout<<"    ;      SSS$$$$$$;                        :S$$;    :      "<<std::endl;
+cout<<"    ;      :SS$$P*^P                          S$$;    :      "<<std::endl;
+cout<<"    ;    ..d$$$P    `                         S$$$    :      "<<std::endl;
+cout<<"    ;     T$$$P                          dS   T$$$b.  :      "<<std::endl;
+cout<<"    ;    :$$$$.     .                   dSS;   $$$$$b.:      "<<std::endl;
+cout<<"    ;    :$$$$$b     Tb.   .          .dSS$$b.d$$$$$$$:      "<<std::endl;
+cout<<"    :    $$$$$$$b     TSb   Tb..g._, :$$SS$$$$$$SSS$$$:      "<<std::endl;
+cout<<"    :   :$$$$$$$$b     SSb   T$SS$P   *^TS$$$$$$P*TS$$:      "<<std::endl;
+cout<<"    :   $$$$$$$$$$b._.dS$$b _ T$$P _     TSS$SSP  :SS$:      "<<std::endl;
+cout<<"    :  :$$$$SSS$$$$$$$$$P* d$b. _.d$P     TSSP*    SS$:      "<<std::endl;
+cout<<"    :  :P*TSSP*^T$$$$$$P  :$$$$$$$$P d$$b          $S$;      "<<std::endl;
+cout<<"    :  :b.dS^^-.  ""^^*    $b T d$$$s$$$$b __..--""$ $;      "<<std::endl;
+cout<<"    :  :$$$S    ""^^..ggSS$$$$$$$$$$$$$$P^^""     .$ $;      "<<std::endl;
+cout<<"    :   $$$$$pp..__   `j$$$$$$^$$$$$b. d....ggppTSSS$$;      "<<std::endl;
+cout<<"    :   $$$$SP     ""*t  :$$$$ $$$$$$$b.  d$b    `TSS$;      "<<std::endl;
+cout<<"    :  \\:$$SP   _.gd$$P_d$$$$$ $$$$$$$$$bd$P'    .dSPd;     "<<std::endl;
+cout<<"    :   \\*^S     *^T$$$$$$$$$$ $$$$$SS$$$$b.    dSS'd$;     "<<std::endl;
+cout<<"    $    $. *-.__.gd$$$$$$$SP:S$$P  TSS$$$$$bssS^*.d$$:      "<<std::endl;
+cout<<"   :$    $$b.   ""^^T$$$$SP' :S$P    TSSSP^^""  .d$$$$:      "<<std::endl;
+cout<<"   :$   :$$$P        *^SP'   :S;     .^*`.     $$$$$$$:      "<<std::endl;
+cout<<"   $;   :$$$            *-.  :S;  .-*     \\    :$$$$$$:     "<<std::endl;
+cout<<"  .$ :  $$$;   :           `.:S;.'         ;    $$$$$$:;     "<<std::endl;
+cout<<" .P :S  $$$    ;             `^'                :$$$$$:;     "<<std::endl;
+cout<<".P  S;.d$$;   :               -'                 $$$$$:;     "<<std::endl;
+cout<<"$  :SS$$$$    ;     __....----  --...____        :$$$ :S     "<<std::endl;
+cout<<"$  $SSS$$;    :  ; d$$$$$$$pppqqqq$$$$$$L;       :$$$ SS     "<<std::endl;
+cout<<": :SSSSS$$     ; : \\ *^T$$$$$$$$$$$$$P' .':      $PT$ SS;   "<<std::endl;
+cout<<" $SP^*^TSP\\    :  \\ *-.  *********** .-*  ;     //   $ SSSb."<<std::endl;
+cout<<" :S     S  \\           *--...___..--*    /  :  /    :gSSSSSb."<<std::endl;
+cout<<"  T bug T   \\       `.      _____       /   ; /              "<<std::endl;
+cout<<"   `         \\ :      *===*********===**   : /               "<<std::endl;
+cout<<"              `:                           ;'                 "<<std::endl;
+cout<<"                *-.                     .-*                   "<<std::endl;
+cout<<"                   ""--..         ..--""                      "<<std::endl;
+cout<<"                                                              "<<std::endl;
+
+}

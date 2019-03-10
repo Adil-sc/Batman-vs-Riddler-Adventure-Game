@@ -12,6 +12,7 @@ int main() {
     Menu myMenu("",myMenuOptions);
 
     displaySplashScreen();
+    displayBatmanFace();
 
 
     menuChoice = myMenu.displayMenu();

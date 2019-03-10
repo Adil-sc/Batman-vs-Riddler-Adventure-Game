@@ -32,6 +32,7 @@ void ArkhamWinRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
 
         case 1:
             //Riddle question is displayed with options, if answer is correct, the player gets a key
+            displayBatmanFace();
             riddleSolved = true;
             break;
 
