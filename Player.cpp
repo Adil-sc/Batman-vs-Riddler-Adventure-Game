@@ -32,6 +32,7 @@ void Player::batmanUtilityBelt() {
         cout<<"["<<utilityBelt[i]<<"] ";
     }
     cout<<""<<std::endl;
+    cout<<""<<std::endl;
 }
 
 string Player::getName() {

@@ -14,7 +14,7 @@ void ArkhamWest::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, P
 
     int menuChoice = 0;
 
-    cout<<"***Arkham West***"<<std::endl;
+    cout<<"<--Arkham West-->"<<std::endl;
 
     vector <string> myMenuOptions = {"Interact with terminal","Go back to main area"};
     Menu myMenu("",myMenuOptions);

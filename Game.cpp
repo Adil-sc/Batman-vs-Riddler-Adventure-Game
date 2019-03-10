@@ -65,10 +65,8 @@ Game::Game() {
 void Game::gameStart() {
 
 
-
-    cout<<"Game start"<<std::endl;
     while(playing){
-
+        cout<<""<<std::endl;
         cout<<batman->getName()<<std::endl;
         batman->timeLimitCountdown();
      //   batman->addToUtilityBelt("Key1",0);
