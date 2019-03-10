@@ -33,6 +33,13 @@ void ArkhamWinRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
         case 1:
             //Riddle question is displayed with options, if answer is correct, the player gets a key
             displayBatmanFace();
+
+            cout<<"Code flashes on the screen..."<<std::endl;
+            cout<<"Patient release sequence aborted.."<<std::endl;
+            cout<<"All patients locked down"<<std::endl;
+
+            cout<<"Batman breathes a sigh of relief, Gotham is safe for another day"<<std::endl;
+
             riddleSolved = true;
             break;
 

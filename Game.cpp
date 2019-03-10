@@ -4,7 +4,17 @@
 
 #include "Game.h"
 
+Game::~Game() {
 
+    for (std::vector<Space *>::iterator it = ArkhamAsylumMap.begin() ; it != ArkhamAsylumMap.end(); ++it)
+    {
+        delete (*it);
+    }
+    ArkhamAsylumMap.clear();
+
+    delete batman;
+
+}
 
 Game::Game() {
 

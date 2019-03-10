@@ -8,6 +8,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include "gameGraphics.h"
 
 using std::cin;
 using std::cout;

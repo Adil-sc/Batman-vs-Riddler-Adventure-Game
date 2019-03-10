@@ -17,6 +17,8 @@ void ArkhamSouth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
         int menuChoice = 0;
 
         //Riddle question
+
+        //cout<<GREEN<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
         cout<<"|                           RIDDLE ME THIS                              |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
@@ -44,6 +46,7 @@ void ArkhamSouth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
         cout<<"|                                q###r                                  |"<<std::endl;
         cout<<"|                                 **                                    |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
+        //cout<<RESET<<std::endl;
 
         // cout<<"What is the beginning of eternity,\n the end of time and space,\n the beginning of every end and the end of every race? "<<std::endl;
         //Riddle answers held in a vector

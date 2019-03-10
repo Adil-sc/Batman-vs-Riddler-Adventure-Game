@@ -10,9 +10,14 @@
 using std::cout;
 using std::cin;
 
+#define GREEN   "\033[32m"      /* Green */
+#define RED     "\033[31m"      /* Red */
+#define RESET   "\033[0m"
+
 void displayBatman();
 void displaySplashScreen();
 void displayBatmanFace();
+void displayBatmanDeath();
 
 
 #endif //FINALPROJECT_GAMEGRAPHICS_H

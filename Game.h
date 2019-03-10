@@ -35,6 +35,7 @@ private:
 
 public:
     Game();
+    ~Game();
     void gameStart();
     void showPlayerStates();
 
