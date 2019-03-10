@@ -17,9 +17,9 @@ public:
 
     ArkhamEast();
 
-    void riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap);
+    void riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
    // virtual void riddleSolved(){ cout<<key<<std::endl;}
-    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap);
+    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 
 };
 

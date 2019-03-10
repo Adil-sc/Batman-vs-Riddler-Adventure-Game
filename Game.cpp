@@ -71,14 +71,14 @@ void Game::gameStart() {
 
         cout<<batman->getName()<<std::endl;
         batman->timeLimitCountdown();
-        batman->addToUtilityBelt("Key1",0);
+     //   batman->addToUtilityBelt("Key1",0);
         batman->batmanUtilityBelt();
-        currentLocation->run(currentLocation, ArkhamAsylumMap);
+        currentLocation->run(currentLocation, ArkhamAsylumMap,batman);
 
 
         //If the Game has ended
         if(currentLocation == ArkhamAsylumMap[Arkham_DeathRoom]){
-            currentLocation->run(currentLocation,ArkhamAsylumMap);
+            currentLocation->run(currentLocation,ArkhamAsylumMap,batman);
             playing = false;
         }
 

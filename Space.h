@@ -10,6 +10,7 @@
 #include <vector>
 #include "Menu.h"
 #include "inputValidation.h"
+#include "Player.h"
 
 using std::string;
 using std::cout;
@@ -54,7 +55,7 @@ public:
     Space *getBottom();
 
 
-    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) = 0;
+    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) = 0;
     //virtual bool gameOver(){};
     virtual void riddleSolved(){}
 

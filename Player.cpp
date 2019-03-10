@@ -44,6 +44,6 @@ int Player::getTimeLimit() {
 
 void Player::timeLimitCountdown() {
 
-    cout<<"Time limit remaining: "<<timeLimit-(rand()%15+1)<<std::endl;
+    cout<<"Time limit remaining: "<<timeLimit-(rand()%10+5)<<std::endl;
 
 }

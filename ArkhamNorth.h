@@ -16,7 +16,7 @@ public:
     ArkhamNorth();
 
 
-    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap);
+    virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 
 };
 

@@ -10,9 +10,9 @@ ArkhamEast::ArkhamEast()
 
 }
 
-void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
+void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
-
+    if(riddleSolved != true){
     int menuChoice = 0;
 
 
@@ -21,32 +21,40 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
     Menu myMenu("",myMenuOptions);
     menuChoice = myMenu.displayMenu();
 
-
-
     switch (menuChoice){
 
         case 1:
-                currentLocation = ArkhamAsylumMap[Arkham_DeathRoom];
+            currentLocation = ArkhamAsylumMap[Arkham_DeathRoom];
             break;
 
         case 2:
+            Player->addToUtilityBelt("Key1",0);
+            riddleSolved = true;
+            currentLocation = ArkhamAsylumMap[Arkham_East]->getLeft();
+            break;
 
+        case 3:
+            currentLocation = ArkhamAsylumMap[Arkham_DeathRoom];
             break;
 
         case 4:
-
-            break;
-
-        case 5:
-
+            currentLocation = ArkhamAsylumMap[Arkham_DeathRoom];
             break;
 
     }
+    } else{
+        cout<<"Riddle already solved"<<std::endl;
+        cout<<"Press enter to continue..."<<std::endl;
+        cin.ignore();
+        cin.ignore();
 
+        currentLocation = ArkhamAsylumMap[Arkham_East]->getLeft();
+
+    }
 
 }
 
-void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
+void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
 
     int menuChoice = 0;
@@ -61,7 +69,7 @@ void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
 
         case 1:
 
-            riddle(currentLocation,ArkhamAsylumMap);
+            riddle(currentLocation,ArkhamAsylumMap,Player);
 
             break;
 

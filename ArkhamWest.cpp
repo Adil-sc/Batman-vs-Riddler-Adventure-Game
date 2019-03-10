@@ -10,7 +10,7 @@ ArkhamWest::ArkhamWest()
 
 }
 
-void ArkhamWest::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
+void ArkhamWest::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
     int menuChoice = 0;
 

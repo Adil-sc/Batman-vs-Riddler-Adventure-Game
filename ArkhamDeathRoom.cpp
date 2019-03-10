@@ -10,7 +10,7 @@ ArkhamDeathRoom::ArkhamDeathRoom()
 
 }
 
-void ArkhamDeathRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap) {
+void ArkhamDeathRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
 
     cout<<"game is over. Batman dies"<<std::endl;
