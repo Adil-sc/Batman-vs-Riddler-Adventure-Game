@@ -12,9 +12,13 @@ ArkhamDeathRoom::ArkhamDeathRoom()
 
 void ArkhamDeathRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
+    if(Player->getTimeLimit() <=0){
+        displayBatmanOutOfTime();
+    }else{
 
-    displayBatmanDeath();
-  //  cout<<"game is over. Batman dies"<<std::endl;
+        displayBatmanDeath();
+    }
+
 
 
 }

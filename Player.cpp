@@ -34,8 +34,8 @@ void Player::setKeyCount(int keyCount) {
 void Player::batmanUtilityBelt() {
     cout<<"Utility Belt: ";
     for(int i = 0; i<utilityBelt.size();i++){
-        //For color:  cout<<"["<<GREEN<<utilityBelt[i]<<RESET<<"] ";
-        cout<<"["<<utilityBelt[i]<<"] ";
+        cout<<"["<<GREEN<<utilityBelt[i]<<RESET<<"] ";
+        //cout<<"["<<utilityBelt[i]<<"] ";
     }
 
     cout<<""<<std::endl;

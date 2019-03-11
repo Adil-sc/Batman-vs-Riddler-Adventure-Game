@@ -32,14 +32,18 @@ void ArkhamWinRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
 
         case 1:
             //Riddle question is displayed with options, if answer is correct, the player gets a key
-            displayBatmanFace();
+            //displayBatmanFace();
 
-            cout<<"Code flashes on the screen..."<<std::endl;
-            cout<<"Patient release sequence aborted.."<<std::endl;
-            cout<<"All patients locked down"<<std::endl;
+            displayBatmanWinScreen();
+            cout<<"Batman stares at the terminal as its green light bathes his suit. 'ALL PATIENTS LOCKED' the terminal reads."<<std::endl;
+            cout<<"Batman breathes a sigh of relief...all patients but the Riddler remain in the Asylum."<<std::endl;
+            cout<<"The Riddler has escaped...but for tonight..Gotham is safe...for now."<<std::endl;
 
-            cout<<"Batman breathes a sigh of relief, Gotham is safe for another day"<<std::endl;
-
+            displayBatmanSymbol();
+            cout<<GREEN<<"GAME END"<<RESET<<std::endl;
+            //Hack to ensure the end game screen is not called if player runs into an edge case of reaching the winning stage at the same time
+            //as the time limit reaches 0. We just set the current game time to 100 in the back ground
+            Player->setTimeLimit(100);
             riddleSolved = true;
             break;
 

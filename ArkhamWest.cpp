@@ -16,7 +16,7 @@ void ArkhamWest::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
         int menuChoice = 0;
 
         //Riddle question
-        //cout<<GREEN<<std::endl;
+        cout<<GREEN<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
         cout<<"|                           RIDDLE ME THIS                              |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
@@ -44,8 +44,8 @@ void ArkhamWest::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
         cout<<"|                                q###r                                  |"<<std::endl;
         cout<<"|                                 **                                    |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
-        //cout<<RESET<<std::endl;
-        // cout<<"What is the beginning of eternity,\n the end of time and space,\n the beginning of every end and the end of every race? "<<std::endl;
+        cout<<RESET<<std::endl;
+
         //Riddle answers held in a vector
         vector <string> myMenuOptions = {"A lawsuit","True love","Childern","A countersuit"};
         Menu myMenu("",myMenuOptions);
@@ -57,6 +57,7 @@ void ArkhamWest::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
                 Player->addToUtilityBelt("Arkham West Key",3);
                 riddleSolved = true;
                 currentLocation = ArkhamAsylumMap[Arkham_West]->getRight();
+                cout<<GREEN<<"OBTAINED 1X ARKHAM WEST KEY"<<RESET<<std::endl;
                 cout<<"Lines of code flash on the terminal....Batman hear a safe in the room unlock. He approaches the safe and in it he finds a key.";
                 cout<<" He puts the key in his utility belt and proceeds to search the rest of the Asylum"<<std::endl;
 

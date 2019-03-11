@@ -18,7 +18,7 @@ void ArkhamNorth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
         int menuChoice = 0;
 
         //Riddle question
-        //cout<<GREEN<<std::endl;
+        cout<<GREEN<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
         cout<<"|                           RIDDLE ME THIS                              |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
@@ -46,7 +46,7 @@ void ArkhamNorth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
         cout<<"|                                q###r                                  |"<<std::endl;
         cout<<"|                                 **                                    |"<<std::endl;
         cout<<"+-----------------------------------------------------------------------+"<<std::endl;
-        //cout<<RESET<<std::endl;
+        cout<<RESET<<std::endl;
 
         // cout<<"What is the beginning of eternity,\n the end of time and space,\n the beginning of every end and the end of every race? "<<std::endl;
         //Riddle answers held in a vector
@@ -69,6 +69,7 @@ void ArkhamNorth::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
                 Player->addToUtilityBelt("Arkham North Key",0);
                 riddleSolved = true;
                 currentLocation = ArkhamAsylumMap[Arkham_North]->getBottom();
+                cout<<GREEN<<"OBTAINED 1X ARKHAM NORTH KEY"<<RESET<<std::endl;
                 cout<<"Lines of code flash on the terminal....Batman hear a safe in the room unlock. He approaches the safe and in it he finds a key.";
                 cout<<" He puts the key in his utility belt and proceeds to search the rest of the Asylum"<<std::endl;
 
