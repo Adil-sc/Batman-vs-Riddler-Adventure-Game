@@ -26,7 +26,6 @@ private:
 
     Player *batman = new Player("Batman");
 
-
     vector <Space *> ArkhamAsylumMap;
 
 

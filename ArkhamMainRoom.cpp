@@ -24,22 +24,23 @@ void ArkhamMainRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
     switch (menuChoice){
 
         case 1:
-
-            //set current location to West Module
-            currentLocation = ArkhamAsylumMap[1];
-
+            //currentLocation = ArkhamAsylumMap[1];
+            currentLocation = currentLocation->getTop();
             break;
 
         case 2:
-            currentLocation = ArkhamAsylumMap[2];
+            //currentLocation = ArkhamAsylumMap[2];
+            currentLocation = currentLocation->getBottom();
             break;
 
         case 3:
-            currentLocation = ArkhamAsylumMap[3];
+         //   currentLocation = ArkhamAsylumMap[3];
+            currentLocation = currentLocation->getRight();
             break;
 
         case 4:
-            currentLocation = ArkhamAsylumMap[4];
+         //   currentLocation = ArkhamAsylumMap[4];
+            currentLocation = currentLocation->getLeft();
             break;
 
 
