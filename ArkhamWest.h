@@ -1,6 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/9/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class outline file for the derived Arkham South class
+*********************************************************************/
 
 #ifndef FINALPROJECT_WESTMODULE_H
 #define FINALPROJECT_WESTMODULE_H
@@ -13,6 +16,7 @@ private:
 public:
 
     ArkhamWest();
+    ~ArkhamWest(){}
 
     void riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);

@@ -1,7 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/9/2019.
-//
-
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class outline file for the Player class which keeps track of things like the time remaining, items held etc
+*********************************************************************/
 #ifndef FINALPROJECT_PLAYER_H
 #define FINALPROJECT_PLAYER_H
 

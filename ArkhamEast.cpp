@@ -1,7 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/9/2019.
-//
-
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class implementation file for the derived ArkhamEast class
+*********************************************************************/
 #include "ArkhamEast.h"
 
 ArkhamEast::ArkhamEast()
@@ -9,6 +11,14 @@ ArkhamEast::ArkhamEast()
 
 }
 
+
+/*********************************************************************
+** Description: Function that handles displaying the riddle for each room the player is in.
+ * Takes as parameters:
+ * Space* To interact with the current location of the player
+ * vector<Space*> To have access to all locations in the game
+ * Player* To modify player attributes like adding items to the utility belt
+*********************************************************************/
 void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
     //If the riddle has not yet been solved, display the riddle
@@ -96,6 +106,15 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
 
 }
 
+
+
+/*********************************************************************
+** Description: Virtual method that is called for each of the space objects to run anything specific to that room
+ * Takes as parameters:
+ * Space* To interact with the current location of the player
+ * vector<Space*> To have access to all locations in the game
+ * Player* To modify player attributes like adding items to the utility belt
+*********************************************************************/
 void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
     int menuChoice = 0;

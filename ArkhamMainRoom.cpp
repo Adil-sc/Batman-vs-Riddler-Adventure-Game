@@ -1,6 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/9/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class implementation file for the derived ArkhamMainRoom class
+*********************************************************************/
 
 #include "ArkhamMainRoom.h"
 
@@ -10,6 +13,14 @@ ArkhamMainRoom::ArkhamMainRoom()
 
 }
 
+
+/*********************************************************************
+** Description: Virtual method that is called for each of the space objects to run anything specific to that room
+ * Takes as parameters:
+ * Space* To interact with the current location of the player
+ * vector<Space*> To have access to all locations in the game
+ * Player* To modify player attributes like adding items to the utility belt
+*********************************************************************/
 void ArkhamMainRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
     int menuChoice = 0;

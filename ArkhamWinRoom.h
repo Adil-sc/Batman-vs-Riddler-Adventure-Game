@@ -1,6 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/10/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class outline file for the derived ArkhamWinRoom class
+*********************************************************************/
 
 #ifndef FINALPROJECT_ARKHAMWINROOM_H
 #define FINALPROJECT_ARKHAMWINROOM_H
@@ -14,6 +17,7 @@ private:
 public:
 
     ArkhamWinRoom();
+    ~ArkhamWinRoom(){}
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 
 };

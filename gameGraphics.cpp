@@ -1,6 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/10/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Outlines the functions that help display various graphics in the game
+*********************************************************************/
 
 #include "gameGraphics.h"
 

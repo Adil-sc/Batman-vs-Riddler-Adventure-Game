@@ -1,3 +1,10 @@
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Final project for class 162
+*********************************************************************/
+
 #include <iostream>
 #include "Game.h"
 

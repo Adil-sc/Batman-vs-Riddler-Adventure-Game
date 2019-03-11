@@ -1,9 +1,16 @@
-//
-// Created by Sandybridge W10 on 3/9/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class implementation file for the Game class that handles the core game logic
+*********************************************************************/
 
 #include "Game.h"
 
+
+/*********************************************************************
+** Description: Game destructor that handles freeing up memory
+*********************************************************************/
 Game::~Game() {
 
     for (std::vector<Space *>::iterator it = ArkhamAsylumMap.begin() ; it != ArkhamAsylumMap.end(); ++it)
@@ -16,6 +23,11 @@ Game::~Game() {
 
 }
 
+
+/*********************************************************************
+** Description: Game constructor that adds all the spaces objects in the game into a vector
+ * It also handles linking the different spaces in the game to each other
+*********************************************************************/
 Game::Game() {
 
     ArkhamAsylumMap.push_back(new ArkhamMainRoom()); //Arkham Main
@@ -72,6 +84,11 @@ Game::Game() {
 }
 
 
+/*********************************************************************
+** Description: Main game loop where all the action happens.
+ * The loop runs until the game is over.
+ * Allows the player to visit the different locations and answer riddles
+*********************************************************************/
 void Game::gameStart() {
 
     //Main game loop that only ends if the player runs out of time, gets a riddle wrong,  or reaches the end of the game.
@@ -107,6 +124,11 @@ void Game::gameStart() {
     }
 }
 
+
+/*********************************************************************
+** Description: Function that displays all of Batmans stats like
+ * the number of items in his utility belt, the ammount of time left etc
+*********************************************************************/
 void Game::showPlayerStates() {
     cout<<""<<std::endl;
     //Shows Baatmans name

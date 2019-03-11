@@ -1,6 +1,9 @@
-//
-// Created by Sandybridge W10 on 3/8/2019.
-//
+/*********************************************************************
+** Program Name: Final Project
+** Author: Adil Chaudhry
+** Date: 3/11/2019
+** Description: Class definition file for the Spaces class which is used to implement the various areas of the game
+*********************************************************************/
 
 #include "Space.h"
 
