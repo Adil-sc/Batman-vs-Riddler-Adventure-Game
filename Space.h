@@ -2,7 +2,7 @@
 ** Program Name: Final Project
 ** Author: Adil Chaudhry
 ** Date: 3/11/2019
-** Description: Class outline file for the Spaces class which is used to implement the various areas of the game
+** Description: Class outline file for the Spaces base class which is used to implement the various areas of the game
 *********************************************************************/
 #ifndef FINALPROJECT_SPACE_H
 #define FINALPROJECT_SPACE_H
@@ -20,6 +20,7 @@ using std::cout;
 using std::cin;
 using std::vector;
 
+//Enum that is used to identify the different space objects held in the ArkhamAsylumMap vector in Game.h
 enum Locations {Arkham_Main,Arkham_North,Arkham_South,Arkham_East,Arkham_West,Arkham_DeathRoom,Arkham_WinRoom};
 
 class Space {
@@ -27,7 +28,6 @@ class Space {
 private:
 
     string description;
-
     Space *top = nullptr;
     Space *left = nullptr;
     Space *right = nullptr;
@@ -39,29 +39,25 @@ public:
     Space(string newDescription);
 
     //Destructor
-   // ~Space();
     virtual ~Space(){}
 
-    //Setters
-
+    //Setters functions
     void setTop(Space *top);
     void setLeft(Space *left);
     void setRight(Space *right);
     void setBottom(Space *bottom);
 
 
-    //Getters
-
+    //Getter functions
     Space *getTop();
     Space *getLeft();
     Space *getRight();
     Space *getBottom();
 
-
+    //Pure virtual function that will handle displaying the riddle in each room
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) = 0;
-    //virtual bool gameOver(){};
-    virtual void riddleSolved(){}
 
+   // virtual void riddleSolved(){}
 
 };
 

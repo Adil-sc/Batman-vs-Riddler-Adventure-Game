@@ -17,12 +17,9 @@ private:
 public:
 
     ArkhamDeathRoom();
-    ~ArkhamDeathRoom(){}
-
-
+   ~ArkhamDeathRoom(){}
 
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
-
 
 };
 

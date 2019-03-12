@@ -13,11 +13,14 @@
 class ArkhamWinRoom: public Space {
 
 private:
+
     bool riddleSolved = false;
+
 public:
 
     ArkhamWinRoom();
-    ~ArkhamWinRoom(){}
+   ~ArkhamWinRoom(){}
+
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 
 };

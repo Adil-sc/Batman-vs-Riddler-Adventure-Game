@@ -19,17 +19,17 @@ using std::vector;
 
 class Player {
 
-    private:
+private:
 
     string name = "";
     int timeLimit = 110;
     int keyCount = 0;
     vector <string> utilityBelt;
 
-
-    public:
+public:
 
     Player(string newName);
+
     //Setters
     void setName(string name);
     void setTimeLimit(int timeLimit);
@@ -42,7 +42,6 @@ class Player {
     int getUtilityBeltSize();
 
     bool allKeysCollected();
-
     void batmanUtilityBelt();
     void timeLimitCountdown();
 

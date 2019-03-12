@@ -16,7 +16,7 @@ private:
 public:
 
     ArkhamMainRoom();
-    ~ArkhamMainRoom(){}
+   ~ArkhamMainRoom(){}
 
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 

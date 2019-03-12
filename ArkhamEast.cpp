@@ -25,7 +25,7 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
     if (riddleSolved != true) {
         int menuChoice = 0;
 
-        cout<<GREEN<<std::endl;
+        cout << GREEN << std::endl;
         cout << "+-----------------------------------------------------------------------+" << std::endl;
         cout << "|                           RIDDLE ME THIS                              |" << std::endl;
         cout << "+-----------------------------------------------------------------------+" << std::endl;
@@ -53,7 +53,7 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
         cout << "|                                q###r                                  |" << std::endl;
         cout << "|                                 **                                    |" << std::endl;
         cout << "+-----------------------------------------------------------------------+" << std::endl;
-        cout<<RESET<<std::endl;
+        cout << RESET << std::endl;
 
 
         vector<string> myMenuOptions = {"Time", "The letter E", "Nothing", "Life"};
@@ -73,7 +73,7 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
                 Player->addToUtilityBelt("Arkham East Key", 1);
                 riddleSolved = true;
                 currentLocation = ArkhamAsylumMap[Arkham_East]->getLeft();
-                cout<<GREEN<<"OBTAINED 1X ARKHAM EAST KEY"<<RESET<<std::endl;
+                cout << GREEN << "OBTAINED 1X ARKHAM EAST KEY" << RESET << std::endl;
                 cout << "Lines of code flash on the terminal....Batman hear a safe in the room unlock. He approaches the safe and in it he finds a key.";
                 cout << " He puts the key in his utility belt and proceeds to search the rest of the Asylum" << std::endl;
 
@@ -93,7 +93,7 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
                 break;
 
         }
-    //If the riddle is already solved, we dont have to solve anything
+        //If the riddle is already solved, we dont have to solve anything
     } else {
         cout << "Riddle already solved" << std::endl;
         cout << "Press enter to continue..." << std::endl;
@@ -105,7 +105,6 @@ void ArkhamEast::riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap
     }
 
 }
-
 
 
 /*********************************************************************
@@ -147,7 +146,6 @@ void ArkhamEast::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, P
             break;
 
     }
-
 
 }
 

@@ -16,7 +16,7 @@ using namespace std;
 void isValidInt(int &value, std::string message) {
 
 
-    while ( cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n')) {
+    while (cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n')) {
         cin.clear();
         cin.ignore(1000, '\n');
         cout << "Validation Error. Please Try Again: " << message << std::endl;
@@ -28,7 +28,7 @@ void isValidInt(int &value, std::string message) {
 
 void isValidIntRange(int &value, int min, int max, std::string message) {
 
-    while ( cin.fail() || (value < min || value > max )|| (cin.peek() != '\r' && cin.peek() != '\n')) {
+    while (cin.fail() || (value < min || value > max) || (cin.peek() != '\r' && cin.peek() != '\n')) {
         cin.clear();
         cin.ignore(1000, '\n');
         cout << "Validation Error. Please Try Again: " << message << std::endl;
@@ -45,7 +45,7 @@ void isValidIntRange(int &value, int min, int max, std::string message) {
 *********************************************************************/
 void isValidDouble(double &value, std::string message) {
 
-    while ( cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n')) {
+    while (cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n')) {
         cin.clear();
         cin.ignore(1000, '\n');
         cout << "Validation Error. Please Try Again: " << message << std::endl;

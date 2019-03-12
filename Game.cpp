@@ -13,8 +13,7 @@
 *********************************************************************/
 Game::~Game() {
 
-    for (std::vector<Space *>::iterator it = ArkhamAsylumMap.begin() ; it != ArkhamAsylumMap.end(); ++it)
-    {
+    for (std::vector<Space *>::iterator it = ArkhamAsylumMap.begin(); it != ArkhamAsylumMap.end(); ++it) {
         delete (*it);
     }
     ArkhamAsylumMap.clear();
@@ -30,6 +29,7 @@ Game::~Game() {
 *********************************************************************/
 Game::Game() {
 
+    //Enums like Arkham_North are defined in Spaces.h
     ArkhamAsylumMap.push_back(new ArkhamMainRoom()); //Arkham Main
     ArkhamAsylumMap.push_back(new ArkhamNorth()); //North
     ArkhamAsylumMap.push_back(new ArkhamSouth()); // South
@@ -39,10 +39,10 @@ Game::Game() {
     ArkhamAsylumMap.push_back(new ArkhamWinRoom()); //Win Room
 
     //Links Arkham Main to other areas of Arkham
-    ArkhamAsylumMap[Arkham_Main]->setTop(ArkhamAsylumMap[Arkham_North]);  //North
-    ArkhamAsylumMap[Arkham_Main]->setBottom(ArkhamAsylumMap[Arkham_South]);  //South
-    ArkhamAsylumMap[Arkham_Main]->setRight(ArkhamAsylumMap[Arkham_East]); //East
-    ArkhamAsylumMap[Arkham_Main]->setLeft(ArkhamAsylumMap[Arkham_West]); //West
+    ArkhamAsylumMap[Arkham_Main]->setTop(ArkhamAsylumMap[Arkham_North]);
+    ArkhamAsylumMap[Arkham_Main]->setBottom(ArkhamAsylumMap[Arkham_South]);
+    ArkhamAsylumMap[Arkham_Main]->setRight(ArkhamAsylumMap[Arkham_East]);
+    ArkhamAsylumMap[Arkham_Main]->setLeft(ArkhamAsylumMap[Arkham_West]);
 
     //Links Arkham North to Arkham Main
     ArkhamAsylumMap[Arkham_North]->setTop(nullptr);
@@ -81,6 +81,7 @@ Game::Game() {
     ArkhamAsylumMap[Arkham_WinRoom]->setLeft(nullptr);
 
     currentLocation = ArkhamAsylumMap[Arkham_Main];
+
 }
 
 
@@ -121,7 +122,9 @@ void Game::gameStart() {
             currentLocation->run(currentLocation, ArkhamAsylumMap, batman);
             playing = false;
         }
+
     }
+
 }
 
 
@@ -130,13 +133,15 @@ void Game::gameStart() {
  * the number of items in his utility belt, the ammount of time left etc
 *********************************************************************/
 void Game::showPlayerStates() {
-    cout<<""<<std::endl;
+
+    cout << "" << std::endl;
     //Shows Baatmans name
-    cout<<batman->getName()<<std::endl;
+    cout << batman->getName() << std::endl;
     //Sets the time remaining between rounds
-    batman->setTimeLimit(batman->getTimeLimit()-10);
+    batman->setTimeLimit(batman->getTimeLimit() - 10);
     //Shows how much time is left in the game
     batman->timeLimitCountdown();
     //Shows the contents held in Batmans utility belt
     batman->batmanUtilityBelt();
+
 }

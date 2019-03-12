@@ -12,8 +12,7 @@
 ** Description: Player constructor that sets up Batmans utity belt with 4 empty slots
 *********************************************************************/
 Player::Player(string newName)
-        :name(newName)
-{
+        : name(newName) {
     utilityBelt.push_back("    ");
     utilityBelt.push_back("    ");
     utilityBelt.push_back("    ");
@@ -43,10 +42,10 @@ void Player::setTimeLimit(int timeLimit) {
  * A string to name the item
  * An int to determin the poistion in the vector you want to add the item
 *********************************************************************/
-void Player::addToUtilityBelt(string newItem,int VectorPos) {
+void Player::addToUtilityBelt(string newItem, int VectorPos) {
 
-       utilityBelt[VectorPos] = newItem;
-        keyCount++;
+    utilityBelt[VectorPos] = newItem;
+    keyCount++;
 
 }
 
@@ -63,14 +62,14 @@ void Player::setKeyCount(int keyCount) {
  * This function helps to display its contents
 *********************************************************************/
 void Player::batmanUtilityBelt() {
-    cout<<"Utility Belt: ";
-    for(int i = 0; i<utilityBelt.size();i++){
-        cout<<"["<<GREEN<<utilityBelt[i]<<RESET<<"] ";
+    cout << "Utility Belt: ";
+    for (int i = 0; i < utilityBelt.size(); i++) {
+        cout << "[" << GREEN << utilityBelt[i] << RESET << "] ";
         //cout<<"["<<utilityBelt[i]<<"] ";
     }
 
-    cout<<""<<std::endl;
-    cout<<""<<std::endl;
+    cout << "" << std::endl;
+    cout << "" << std::endl;
 }
 
 
@@ -99,9 +98,9 @@ int Player::getUtilityBeltSize() {
 
 bool Player::allKeysCollected() {
 
-    if(keyCount == 4){
+    if (keyCount == 4) {
         return true;
-    } else{
+    } else {
         return false;
     }
 
@@ -109,10 +108,10 @@ bool Player::allKeysCollected() {
 
 
 /*********************************************************************
-** Description: Function that displays the current time remaning in the game
+** Description: Function that displays the current time remaining in the game
 *********************************************************************/
 void Player::timeLimitCountdown() {
 
-    cout<<"Time limit remaining: "<<timeLimit<<" min"<<std::endl;
+    cout << "Time limit remaining: " << timeLimit << " min" << std::endl;
 
 }

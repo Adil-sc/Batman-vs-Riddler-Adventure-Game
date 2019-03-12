@@ -15,13 +15,16 @@
 class ArkhamNorth:public Space {
 
 private:
+
     bool riddleSolved = false;
 
 public:
+
     ArkhamNorth();
-    ~ArkhamNorth(){}
+   ~ArkhamNorth(){}
 
     void riddle(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
+
     virtual void run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player);
 
 };

@@ -27,13 +27,12 @@ ArkhamDeathRoom::ArkhamDeathRoom()
 *********************************************************************/
 void ArkhamDeathRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMap, Player *&Player) {
 
+    //If the player has run of out time, we display a different end game splash team vs if they have died
     if(Player->getTimeLimit() <=0){
         displayBatmanOutOfTime();
     }else{
-
         displayBatmanDeath();
     }
-
 
 
 }

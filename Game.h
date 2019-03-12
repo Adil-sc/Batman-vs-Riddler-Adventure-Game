@@ -26,21 +26,17 @@ private:
     bool playing = true;
     Space *currentLocation = nullptr;
     Space *previousLocation = nullptr;
-
     Player *batman = new Player("Batman");
-
     vector <Space *> ArkhamAsylumMap;
 
-
-
-
-
 public:
-    Game();
-    ~Game();
-    void gameStart();
-    void showPlayerStates();
 
+    Game();
+   ~Game();
+
+    void gameStart();
+
+    void showPlayerStates();
 
 };
 
