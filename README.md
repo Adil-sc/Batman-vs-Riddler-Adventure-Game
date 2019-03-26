@@ -1,6 +1,6 @@
-# Foobar
+# Batman vs Riddler - A one-player, text-based game 
 
-Foobar is a Python library for dealing with word pluralization.
+Final Project for CS162 where you play as Batman, stuck in Arkham Asylum. You have to explore different parts of the Asymium and answer the Riddlers questions before time runs out to prevent patients, like the Joker, from escaping into Gotham.  
 
 ## Installation
 
@@ -12,18 +12,14 @@ pip install foobar
 
 ## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```unix
+make finalProject
+```
+Run with the following command
+```unix
+./finalProject
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Built With
+c++
 
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
