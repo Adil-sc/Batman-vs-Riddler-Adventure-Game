@@ -10,12 +10,12 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 pip install foobar
 ```
 
-## Usage
-
-```unix
+## Installation and Usage
+Compile the program with this command:
+```
 make finalProject
 ```
-Run with the following command
+Run with the following command:
 ```unix
 ./finalProject
 ```
