@@ -95,7 +95,7 @@ void Game::gameStart() {
     //Main game loop that only ends if the player runs out of time, gets a riddle wrong,  or reaches the end of the game.
     while (playing) {
         //Shows Batmans stats such as the time remaining in the game and the contents of Batmans utility belt
-        showPlayerStates();
+        showPlayerStatus();
 
         //Runs the primary method of the Space object that is held in the currentLocation pointer
         currentLocation->run(currentLocation, ArkhamAsylumMap, batman);
@@ -106,7 +106,7 @@ void Game::gameStart() {
         if (batman->allKeysCollected() == true) {
 
             //Displays Batmans name, time remaining, and items in the utility belt
-            showPlayerStates();
+            showPlayerStatus();
 
             //Sets the location to the Arkham Win Room
             currentLocation = ArkhamAsylumMap[Arkham_WinRoom];
@@ -130,9 +130,9 @@ void Game::gameStart() {
 
 /*********************************************************************
 ** Description: Function that displays all of Batmans stats like
- * the number of items in his utility belt, the ammount of time left etc
+ * the number of items in his utility belt, the amount of time left etc
 *********************************************************************/
-void Game::showPlayerStates() {
+void Game::showPlayerStatus() {
 
     cout << "" << std::endl;
     //Shows Baatmans name

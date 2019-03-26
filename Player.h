@@ -22,7 +22,7 @@ class Player {
 private:
 
     string name = "";
-    int timeLimit = 110;
+    int timeLimit = 130;
     int keyCount = 0;
     vector <string> utilityBelt;
 

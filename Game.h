@@ -36,7 +36,7 @@ public:
 
     void gameStart();
 
-    void showPlayerStates();
+    void showPlayerStatus();
 
 };
 

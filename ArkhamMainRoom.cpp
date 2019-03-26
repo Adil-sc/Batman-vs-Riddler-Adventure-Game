@@ -27,8 +27,8 @@ void ArkhamMainRoom::run(Space *&currentLocation, vector<Space *> ArkhamAsylumMa
 
     cout << "<--Arkham Asylum-->" << std::endl;
 
-    vector<string> myMenuOptions = {"Explore the Botanical Gardens Arkham North ", "Explore the correctional facility in Arkham South", "Explore the Psyc Ward in in Arkham East",
-                                    "Explore the intensive care facility in Arkham West"};
+    vector<string> myMenuOptions = {"Explore the Botanical Gardens Arkham North ", "Explore the Correctional Facility in Arkham South", "Explore the Psyc Ward in in Arkham East",
+                                    "Explore the Intensive Care facility in Arkham West"};
     Menu myMenu("", myMenuOptions);
     menuChoice = myMenu.displayMenu();
 
