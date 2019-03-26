@@ -6,11 +6,11 @@ Final Project for CS162 where you play as Batman, stuck in Arkham Asylum. You ha
 ## Installation and Usage
 Compile the program with this command:
 ```
-make finalProject
+make FinalProject
 ```
 Run with the following command:
 ```unix
-./finalProject
+./FinalProject
 ```
 
 ## Built With
