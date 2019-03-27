@@ -15,5 +15,5 @@ Run with the following command:
 ```
 
 ## Built With
-c++
+C++
 
